@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Word Counter</h1>
+        <textarea oninput="pre()" name="" id="" placeholder="Enter your text"></textarea>
+       
+
+      <div class="count-div">
+        <div id = "char-count">Char Count</div>
+        <div id = "word-count">Word Count</div>
+      </div>
+
+      <div class="all-btn">
+        <button onclick="upper()" id="upper">UpperCase</button>
+        <button onclick="lower()" id="lower">LowerCase</button>
+        <button  onclick="clc()" id="clear">Clear</button>
+        <button onclick="cop()">Copy</button>
+        <button onclick="removextra()" id="remove-sp">Remove Extra Space</button>
+      </div>
+
+      <textarea name="" id="preview"></textarea>
+    </div>
+    <script src="counter.js"></script>
+</body>
+</html>
