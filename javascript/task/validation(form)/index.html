@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- form -->
+     <h1>Form Validation</h1>
+     <div class="main-form">
+     <form action="">
+
+        <div class="all-input">
+        <!-- <label for="">Username :</label> -->
+        <input onblur="formvalidat(this,sp1,'username is reqired')" placeholder="Enter your Name :"  type="name" name="Username" id=""> <br> <span id="sp1"></span> <br><br>
+        
+        <!-- <label for="">Mobile No :</label> -->
+        <input onblur="formvalidat(this,sp2,'mobile number is reqired')" placeholder="Enter your No :" type="tel" name="Mobileno" id=""> <br> <span id="sp2"></span> <br><br>
+
+
+        <!-- <label for="">password :</label> -->
+        <input onblur="formvalidat(this,sp3,'password is reqired')" placeholder="Enter your password :" type="password" name="Userpass" id="password"> <br>
+        <span id="sp3"></span>
+        <br><br>
+     
+       
+          <!-- <label for="">Confirm Password</label> -->
+          <input onblur="formvalidat(this,sp4,'Confirm password reqired')" placeholder="Conform Password" type="password" name="" id="Confirmpass">  <br>   
+          <span id="sp4"></span> <br><br>
+              
+
+        <!-- <label for="">E-mail :</label> -->
+        <input onblur="formvalidat(this,sp5,'email is reqired')" placeholder="Enter your E-mail :" type="email" name="email" id=""> <br>
+        <span id="sp5"></span> <br><br>
+
+            <button onclick="formvalidat()">Sumbit</button>
+        <script src="index.js"></script>
+    </div>
+     </form>
+    </div>
+
+    <!-- script js -->
+     <script src="index.js"></script>
+</body>
+</html>
