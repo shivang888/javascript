@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+</head>
+<body>
+    <h1>Number Method</h1>
+<!-- script js -->
+  <script>
+      let a = 8;
+      let b = 's';
+
+        // type of Number
+
+      console.log(a);
+      console.log(typeof a);
+
+        //  typeof string
+
+      console.log(b);
+      console.log(typeof b);
+
+        console.log(parseInt(10,5));
+        console.log(parseFloat("8 is mu lucky number"));
+
+        // Number.isFinite JavaScript me ek method hai jo check karta hai ki given value finite number hai ya nahi. Ye method true return karta hai agar value finite number ho, aur false agar value NaN (Not a Number), +Infinity, ya -Infinity ho.
+
+        console.log(Number.isFinite(a));
+
+
+ //  toFixed JavaScript me ek method hai jo ek number ko fixed-point notation me string ke roop me convert karta hai, aur specified number of digits ke baad decimal point ke baad round off karta hai.
+
+            let num = 857.456789;
+            
+            let num1 = num.toFixed(2);
+            let num2 = num.toFixed(0); 
+            let num3 = num.toFixed(5); 
+ 
+            console.log(num1);
+            console.log(num2);
+            console.log(num3);
+
+            
+             // convert string
+            console.log(a.toString());
+               
+            // convert number
+            console.log(Number("2"));
+  
+                             
+      </script>
+</body>
+</html>
