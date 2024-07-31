@@ -28,7 +28,6 @@ setTimeout(() => {
 }, 7000);
 
 setTimeout(() => {
-    
     img4.style.width="10%"
 }, 9000);
 
