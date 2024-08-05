@@ -1,0 +1,11 @@
+/* universal Selector */
+*{margin: 0; padding: 0;box-sizing: border-box;}
+/* main Crude class */
+.main-crude{display: flex;}
+/* main Crude class */
+.crude{width: 85%; height: 90vh;display: flex; border: 1px solid maroon;margin: auto;margin-top: 3%;}
+/* task input id */
+#task{width: 70%; height: 35vh;margin-left: 7%;margin-top: 2%;}
+/* add bt id */
+#add{width: 10%; height: 60px;font-size: 24px;background-color: rgba(0, 0, 255, 0.714);color: white;font-weight: bold;border: 1px solid rgba(0, 0, 255, 0.714);margin-left: 5%;margin-top: 7%;}
+/* main-clcr */
