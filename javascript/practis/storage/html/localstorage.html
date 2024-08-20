@@ -22,8 +22,11 @@
         // localStorage.removeItem("name");
         // localStorage.removeItem("age");
 
-        const key = prompt("Enter your Key :");
+
+          setTimeout(() => {
+            const key = prompt("Enter your Key :");
         const value = prompt("Enter your Value:");
+          }, 3000);
 
         localStorage.setItem(key,value);
 
