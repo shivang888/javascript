@@ -10,9 +10,9 @@ body{ background-color: gray;color: white;}
 
 .text{display: flex;}
 
-.text>textarea{height: 200px;width: 80%;margin:10px 0px 0px 10px;border-radius: 20px;padding: 10px;}
+.text>input{height: 200px;width: 80%;margin:10px 0px 0px 10px;border-radius: 20px;padding: 10px;}
 
-.text>button{height: 80px;width: 170px;margin-left: 50px;margin-top: 80px;border-radius: 20px;background-color: #31363F;color: white;font-weight: bolder;border: none;}
+.text>button{height: 80px;width: 170px;margin-left: 50px;margin-top: 80px;border-radius: 20px;background-color: #31363F; font-size: 22px;     color: white;font-weight: bolder;border: none;}
 
 .check-all>label{font-weight: bolder;margin-left: 50px;font-size: 18px;}
 
@@ -31,9 +31,9 @@ body{ background-color: gray;color: white;}
 
 #checkbox1{  height: 40px;width: 50px;}
 
-#text1{/* border: 1px solid red; */width: 62%;transform: translate(25px , 0px);}
+.value{border: 1px solid black; color: black; font-weight: bold;  font-size: 22px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  background-color: white;    width: 62%;transform: translate(25px , 0px);}
 
 
 #edit1{ padding: 15px 40px; background-color: #31363F; border: none;border-radius: 20px; color: white; transform: translate(60px , 0px);}
 
-#delate1{padding: 15px 40px;background-color: #31363F;border: none;border-radius: 20px; color: white; transform: translate(40px , 0px);}
+#delete{padding: 15px 40px;background-color: #31363F;border: none;border-radius: 20px; color: white; transform: translate(40px , 0px);}
