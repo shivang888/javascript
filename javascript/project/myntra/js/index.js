@@ -1,5 +1,5 @@
 
-
+// function addcart or sore localstorage
 function addCart(img,title,para,price) {
   let productData = JSON.parse(localStorage.getItem("cart")) || [];
   console.log(productData);
@@ -10,7 +10,7 @@ function addCart(img,title,para,price) {
 
 }
 
-
+// count Update
 function updateCartCount() {
       let productData = JSON.parse(localStorage.getItem('cart')) || [];
       document.getElementById('spnId').innerText = productData.length;
@@ -23,7 +23,7 @@ function updateCartCount() {
 
 
 // btn filter function
-
+// catagory change all-men-women btn
 document.getElementById('all-btn').addEventListener('click', function() {
   filterProducts('all');
 });

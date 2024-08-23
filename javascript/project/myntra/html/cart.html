@@ -15,7 +15,7 @@
   <div class="main-display">
     <div id="dispData"></div>
     <div class="allDetails">
-      <h5>Card details</h5>
+      <h5>Card details</h5>   
       <img src="https://yt3.googleusercontent.com/Rv05bma5YV9owhbkJOLqUI6zKjGQQ2S0Un7zWpIZKugkObgY6kAzv6gAXvmOalnRlAtUzgHOgw=s900-c-k-c0x00ffffff-no-rj" alt="">
       <p>Card Type</p>
       <div class="creditcard">
@@ -26,9 +26,9 @@
       </div> <br>
       <p>Payment Method</p>
       <ul>
-        <li><input  type="radio"> <label for="UPI">UPI</label></li>
-        <li><input  type="radio"> <label for="BHIM UPI">BHIM UPI</label></li>
-        <li><input  type="radio"> <label for="Cash On delivery(cod)">Cash On delivery(cod)</label></li>
+        <li><input name="Payment" type="radio"> <label for="UPI">UPI</label></li>
+        <li><input name="Payment" type="radio"> <label for="BHIM UPI">BHIM UPI</label></li>
+        <li><input name="Payment"  type="radio"> <label for="Cash On delivery(cod)">Cash On delivery(cod)</label></li>
       </ul>
       
              <form action="">
@@ -39,11 +39,26 @@
              </form>
             <div class="underline"></div>
               <div class="displayTotal">
+                <div class="d-flex justify-content-between">
+                  <p class="mb-2">Subtotal</p>
+                  <p class="total-price mb-2"></p>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                  <p class="mb-2">Shipping</p>
+                  <p class="mb-2">$20.00</p>
+                </div>
+
+                <div class="d-flex justify-content-between mb-4">
+                  <p class="mb-2">Total(Incl. taxes)</p>
+                  <p class="mb-2">$4818.00</p>
+                </div>
 
               </div>
              <div class="btn-main">
               <a  href="product.html"><button class="backBtn">Continue Shopping</button></a> <br><br>
-              <a href=""><button onclick="placeorder()" class="placeorder">Place Order</button></a>
+              <a href=""><button onclick="placeorder()" class="placeorder">Place Order</button></a> <br>
+              <button class="clearAll">Clear All</button>
             </div>
     </div>
   </div>

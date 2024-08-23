@@ -1,7 +1,10 @@
+// all acces process
 let taskAddBtn = document.querySelector('#addTask');
 let input = document.querySelector('#input');
 let editBtn = document.querySelector('#edit1');
 let removeBtn = document.querySelector('#taskPrint');
+
+// genrate hatml
 
 taskAddBtn.addEventListener("click",function () {
     if (input.value.trim() === '') return;
@@ -14,7 +17,7 @@ taskAddBtn.addEventListener("click",function () {
     input.value = "";
 })
 
-
+// div conver to input edit btn function
 function makeInput() {
       let div = document.getElementById("value");
       let content = div.innerHTML;
@@ -24,6 +27,7 @@ function makeInput() {
       div.parentNode.replaceChild(input, div);  
 }
 
+// remove btn function
 function remove() {
     let deleteBtn = document.querySelectorAll("#delete");
     deleteBtn.forEach(element => {
