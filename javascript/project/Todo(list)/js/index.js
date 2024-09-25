@@ -17,14 +17,14 @@ taskAddBtn.addEventListener("click",function () {
     input.value = "";
 })
 
-// div conver to input edit btn function
+// div convert to input edit btn function
 function makeInput() {
       let div = document.getElementById("value");
       let content = div.innerHTML;
       let input = document.createElement("input");
       input.value = content;
       input.className = "value";
-      div.parentNode.replaceChild(input, div);  
+      div.parentNode.replaceChild(input, div);
 }
 
 // remove btn function
