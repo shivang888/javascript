@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 
 /* insta-main div */
-.insta-main{width: 25%; height: 493px; border: 0.1px solid rgba(0, 0, 0, 0.201); margin: auto;}
+.insta-main{width: 25%; height: 493px; border: 0.1px solid rgba(0, 0, 0, 0.201); margin: auto; margin-top: 110px;}
 /* insta-icon */
 .insta-icon{text-align: center; line-height:180px;}     
 /* main-input div */

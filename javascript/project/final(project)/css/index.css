@@ -1,0 +1,164 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* mainBestshoes */
+.main-BestShoes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Bestshoes content class */
+.Bestshoes-content{
+    width: 350px;
+
+}
+/* BestShoes span tag */
+.Bestshoes-content span{
+    padding:  10px 40px ;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+    margin-left: 19px;
+}
+
+.Bestshoes-content h2{
+    font-size: 35px;
+    font-weight: bold;
+    padding: 40px 0px 10px 18px;
+}
+
+.Bestshoes-content p{   
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.47);
+    padding: 10px 10px;
+}
+
+.Bestshoes-content button{
+    padding: 13px 30px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 700;
+    border: 0.1px solid rgba(0, 0, 0, 0.112);
+    margin: 25px 30px;
+}
+.Bestshoes-content button:hover{
+background-color: #99c27e;
+color: white;
+transition: all 0.2s linear;
+}
+
+.BestShoes-slider{
+    width: 1086px;
+}
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+   
+    margin: 20px auto; /* You can adjust this */
+}
+
+.slider {
+    height: 500px;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    min-width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    /* font-size: 1.5rem; */
+    font-weight: bold;  
+    color: #333;
+}
+
+.card h4{margin-top: -10px;}
+.product-img{width: 400px;margin-top: -80px;}
+.rating-img{width: 38%;margin-top: -35px;}
+.inform-p{margin-top: -8px;font-size: 20px;color: rgba(0, 0, 0, 0.443);}
+.hover-btn{ width: 100%; display: flex;justify-content: center;gap: 1px;margin-top: -30px;opacity: 0;}
+.hover-btn>button{ background-color: black; color: white; width: 50%;padding: 8px;}
+.card:hover .hover-btn{margin-top: -35px;opacity: 1;transition: all 0.4s linear;}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .card {
+        min-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        min-width: 33.3333%;
+    }
+}
+
+/* Navigation buttons */
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prevBtn {left: 10px;opacity: 0;}
+
+#nextBtn {opacity: 0;right: 10px;}
+
+
+/* shoes company section css started */
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+
+  .swiper-slide p{font-size: 20px;color: white;padding: 10px 0px;}
+  .swiper-slide>button{padding: 10px;font-size: 14px;font-weight: 600;margin-top: 30px;opacity: 0;}
+  .swiper-slide>img{margin-top: 150px;}
+  .swiper-slide:hover { background-color: black;transition: all 0.5s linear; }
+  .swiper-slide:hover:hover img{ display: none; }
+  .swiper-slide:hover button{ margin-top: 0;opacity: 1;transition: all 0.5s linear; }
