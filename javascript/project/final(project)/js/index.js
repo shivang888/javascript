@@ -50,4 +50,4 @@ const swiper = new Swiper('.swiper-container', {
       delay: 3000,      // Automatic slide time (ms)
       disableOnInteraction: false,  // Interaction ke baad bhi autoplay chalu rahe
     },
-  });
+  });   

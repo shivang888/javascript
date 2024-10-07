@@ -1,0 +1,16 @@
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+    .card {
+        min-width: 50%;
+    }
+}
+
+@media  (max-width:992px) {
+    
+}
+
+@media (min-width: 1024px) {
+    .card {
+        min-width: 33.3333%;
+    }
+}
