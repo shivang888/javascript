@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Viewer</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script>
+      AFRAME.registerComponent('auto-rotate', {
+        schema: {
+          speed: { type: 'number', default: 0.1 }, // Rotation speed
+        },
+        tick: function () {
+          if (!this.el.is('grabbed')) {
+            // Auto-rotate if not manually controlled
+            this.el.object3D.rotation.y += this.data.speed * 0.01;
+          }
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- 360 Image -->
+      <a-sky src="./360Bedroom-1.png" auto-rotate="speed: 0.2" grab-pan-controls></a-sky>
+    </a-scene>
+  </body>
+</html>

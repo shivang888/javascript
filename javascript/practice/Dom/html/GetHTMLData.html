@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET HTML DATA IN JS</title>
+</head>
+<body>
+    <h1>GET HTML DATA IN JS</h1>
+       
+       <input type="text" class="Sclass" name="one" id="one" value="shivang">
+       <input type="text" class="Sclass" name="two" id="two" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+       <input type="text" class="Sclass" name="" id="" value="shivang">
+ 
+    <!-- script js -->
+     <script>
+        //  GET HTML DATA
+
+        // 1.getElementById
+
+        let inputData1 = document.getElementById('one');
+        console.log(inputData1);
+        console.log(inputData1.value);
+
+        // 2.getElementsByClassName
+
+        let inputData2 = document.getElementsByClassName('Sclass');
+        console.log(inputData2);
+        console.log(inputData2[1].value);
+
+        //  3.getElementsByTagName
+
+        let inputData3 = document.getElementsByTagName("two");
+        console.log(inputData3);
+        console.log(inputData3[0].value);
+
+        // 4.getElementsByTagName
+
+        let inputData4 = document.getElementsByTagName('input');
+        console.log(inputData4);
+        console.log(inputData4[0].value);
+
+        //  5.querySelector
+
+        let inputData5 = document.querySelector('.Sclass');
+        console.log(inputData5);
+        console.log(inputData5.value);
+         
+        // 6.querySelectorAll
+
+        let inputData6 = document.querySelectorAll('input');
+        console.log(inputData6);
+        console.log(inputData6[1].value);
+        
+        
+     </script>
+</body>
+</html>

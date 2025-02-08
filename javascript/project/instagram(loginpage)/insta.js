@@ -1,6 +1,6 @@
 // acess
-let a = document.querySelector("#password");
-let b = document.querySelector("#email");
+let a = document.querySelector("#password").value;
+let b = document.querySelector("#username").value;
 let c = document.querySelector('#placeholder-1');
 let d = document.querySelector('#placeholder-2');
 let toogle = document.querySelector("#hide-show");
@@ -39,10 +39,23 @@ function password(a) {
     }
 }
 
-
-
 //  let loginbtn = document.querySelector('.login-btn');
 
- function loginbtn() {
-    alert("login sucessful");
- }
+function loginbtn() {
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+
+    if (username && password) {
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+
+        alert('Username aur Password localStorage me save kiye gaye!');
+    } else {
+        alert('Please fill both username and password.');
+    }
+}
+
+
+
+
+
